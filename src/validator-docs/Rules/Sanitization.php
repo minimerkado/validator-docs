@@ -10,6 +10,6 @@ abstract class Sanitization
 {
     public function sanitize($value): string
     {
-        return preg_replace('/[^\d]/', '', $value);
+        return preg_replace('/[^\d]/', '', $value ?? '');
     }
 }
